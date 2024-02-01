@@ -1,0 +1,33 @@
+@use "colors";
+
+.navbar {
+    background-image: url(../images/hero/fundohero.png);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    font-optical-sizing: none;
+    font-family: 'Black Ops One';
+    top: 0;
+    z-index: 1020;
+
+    img {
+        height: 55px;
+    }
+
+    .nav-link {
+        color: colors.$colorTextSecundary;
+        margin-right: 15px;
+    }
+
+    .nav .nav-link.active {
+        background-color: colors.$colorTextSecundary;
+        color: colors.$corDefundo;
+        font-weight: 700;
+    }
+
+    .navbar-toggler {
+        background-color: colors.$colorTextSecundary;
+    }
+}
+
+
+

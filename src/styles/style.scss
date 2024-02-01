@@ -1,5 +1,79 @@
-$bgColor: rgb(25, 160, 49);
+@use 'navbar';
+@use 'colors';
+@use 'about';
+@use 'episodes';
+@use 'characters';
+@use 'talk';
 
-body {
-    background-color: $bgColor;
+
+//Text styles
+@mixin text($fontSizeText: 16px) { //config style main font
+    font-size: $fontSizeText;
+    line-height: $fontSizeText + 10px;
+    color: colors.$colorTextSecundary;
+
+}
+
+.text--big {
+    @include text(18px); //@include the @mixin text
+}
+
+.text {
+    @include text; //same size @mixin text 16px
+}
+
+.text--small {
+    @include text(12px)
+}
+
+
+//Title styles
+@mixin title($fontSizeTitle: 40px) {
+    @include text($fontSizeTitle);
+    color: colors.$colorTextSecundary;
+    font-family: 'Black Ops One', system-ui;
+}
+
+.title--big {
+    @include title(44px);
+}
+
+.title {
+    @include title; //40px
+}
+
+.title--small {
+    @include title(28px);
+}
+
+.title--xsmall {
+    @include title(18px)
+}
+
+.hero__img {
+    max-width: 100%;
+}
+
+h1 {
+    margin-bottom: 70px;
+}
+
+figcaption {
+    color: colors.$colorTextCaption;
+    margin-bottom: 30px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+li {
+    list-style: none;
+}
+
+footer {
+    background-color: black;
+    color: colors.$colorTextPrimary;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: center;
 }

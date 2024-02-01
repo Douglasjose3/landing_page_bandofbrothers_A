@@ -1,0 +1,10 @@
+@use "colors";
+
+.about {
+    background-color: colors.$colorAbout;
+
+    img {
+        max-width: 100%;
+        top: 0;
+    }
+}

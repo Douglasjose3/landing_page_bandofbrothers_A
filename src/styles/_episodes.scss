@@ -1,0 +1,36 @@
+@use 'colors';
+
+.episodes {
+    background-color: colors.$corDefundo;
+    background-image: url(../images/hero/fundohero.png);
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+
+    button {
+        color: colors.$colorAbout;
+        margin-bottom: 8px;
+
+        &:hover {
+            color: colors.$colorTextSecundary;
+        }
+    }
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        margin-bottom: 2px;
+    }
+
+    .nav-eps .nav-link.active {
+        background-color: colors.$colorAbout;
+        color: colors.$colorTextPrimary;
+
+        &:hover {
+            background-color: colors.$colorTextSecundary;
+            color: colors.$colorAbout;
+        }
+    }
+}

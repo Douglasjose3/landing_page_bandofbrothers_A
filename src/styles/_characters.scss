@@ -1,0 +1,36 @@
+@use 'colors';
+
+.characters {
+    background-color: colors.$colorCharac;
+    background-image: url(../images/hero/fundohero.png);
+    background-repeat: no-repeat;
+
+    button {
+        color: colors.$colorAbout;
+        margin-bottom: 8px;
+        text-align: left;
+
+        &:hover {
+            color: colors.$colorTextSecundary;
+        }
+    }
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        margin-bottom: 2px;
+    }
+
+    .nav-charac .nav-link.active {
+        background-color: colors.$colorAbout;
+        color: colors.$colorTextPrimary;
+
+        &:hover {
+            background-color: colors.$colorTextSecundary;
+            color: colors.$colorAbout;
+        }
+    }
+}
