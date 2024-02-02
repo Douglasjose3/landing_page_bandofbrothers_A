@@ -1,10 +1,18 @@
-@use "colors";
+@use 'colors';
 
 .about {
     background-color: colors.$colorAbout;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        
+        h2 {
+            font-size: 30px;
+        }
+    }
 
     img {
         max-width: 100%;
-        top: 0;
+        height: auto;
     }
 }

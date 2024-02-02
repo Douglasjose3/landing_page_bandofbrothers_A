@@ -2,9 +2,17 @@
 
 .episodes {
     background-color: colors.$corDefundo;
-    background-image: url(../images/hero/fundohero.png);
+    background-image: url(../images/hero/flipfundohero.png);
     background-repeat: no-repeat;
     padding-bottom: 50px;
+    max-width: 100%;
+    height: auto;
+
+    @media (max-width: 768px) {
+        background-image: url(../images/hero/menorfundohero.png);
+        max-width: 100%;
+        height: auto;
+    }
 
     button {
         color: colors.$colorAbout;
@@ -13,10 +21,26 @@
         &:hover {
             color: colors.$colorTextSecundary;
         }
+
+        @media (max-width: 768px) {
+            font-size: 19px;
+            margin-right: 10px;
+        }
     }
 
     h3 {
         margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+            margin-top: 20px;
+        }
+    }
+
+    h1 {
+
+        @media (max-width: 768px) {
+            font-size: 35px;
+        }
     }
 
     img {

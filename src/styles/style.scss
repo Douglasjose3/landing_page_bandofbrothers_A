@@ -4,6 +4,7 @@
 @use 'episodes';
 @use 'characters';
 @use 'talk';
+@use 'image_hero';
 
 
 //Text styles
@@ -50,10 +51,6 @@
     @include title(18px)
 }
 
-.hero__img {
-    max-width: 100%;
-}
-
 h1 {
     margin-bottom: 70px;
 }
@@ -64,6 +61,12 @@ figcaption {
     text-align: right;
     text-transform: uppercase;
     font-size: 12px;
+
+    @media (max-width: 768px) {
+        padding: 0;
+        @include text(7px);
+        color: colors.$colorTextPrimary;
+    }
 }
 
 li {
@@ -76,4 +79,11 @@ footer {
     padding-top: 25px;
     padding-bottom: 10px;
     text-align: center;
+}
+
+.container {
+
+    @media (max-width: 768px) {
+        max-width: 90%;
+    }
 }

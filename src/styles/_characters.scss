@@ -2,8 +2,20 @@
 
 .characters {
     background-color: colors.$colorCharac;
-    background-image: url(../images/hero/fundohero.png);
+    background-image: url(../images/hero/flipfundohero.png);
     background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+        background-image: url(../images/hero/menorfundohero.png);
+    }
+
+    h1 {
+
+        @media (max-width: 768px) {
+            font-size: 30px;
+            white-space: nowrap;
+        }
+    }
 
     button {
         color: colors.$colorAbout;
@@ -22,6 +34,10 @@
     img {
         max-width: 100%;
         margin-bottom: 2px;
+
+        @media (max-width: 768px) {
+            margin-top: 20px;
+        }
     }
 
     .nav-charac .nav-link.active {
